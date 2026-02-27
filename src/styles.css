@@ -4,6 +4,22 @@
 
 @layer components{
 
+    .pol-h3{
+        @apply text-3xl font-bold text-blue-900 mb-6 flex items-center gap-2;
+    }
+
+    .pol-h4{
+        @apply font-bold text-lg mb-2;
+    }
+
+    .pol-sec{
+        @apply bg-white p-8 rounded-lg shadow-lg mb-12 odd:bg-gray-50;
+    }
+
+    .amen-sec-div{
+        @apply grid grid-cols-1 md:grid-cols-2 gap-8 items-center;
+    }
+
     .nav{
         @apply bg-blue-900 text-white shadow-lg dark:bg-gray-800 dark:text-gray-200;
     }
@@ -21,7 +37,7 @@
     }
 
     .card-p{
-       @apply text-gray-700;
+       @apply text-gray-700 dark:text-gray-400;
     }
 
     .room-card-div{
