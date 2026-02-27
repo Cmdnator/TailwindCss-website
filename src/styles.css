@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .nav{
+        @apply bg-blue-900 text-white shadow-lg dark:bg-gray-800 dark:text-gray-200;
+    }
+
+    .hero-header{
+        @apply bg-gradient-to-r from-blue-900 to-blue-500 text-white py-20 px-4;
+    }
+
+    .amen-card-div{
+       @apply bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl transition transform hover:scale-105;
+    }
+
+    .amen-card-h{
+        @apply text-2xl font-bold text-blue-900 mb-3;
+    }
+
+    .card-p{
+       @apply text-gray-700;
+    }
+
+    .room-card-div{
+        @apply border border-gray-300 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition;
+    }
+
+    .room-card-h{
+        @apply text-2xl font-bold text-blue-900 mb-2;
+    }
+
+    .room-card-p{
+        @apply text-2xl font-bold text-yellow-600 mb-4;
+    }
+
+    .room-card-btn{
+        @apply w-full bg-blue-900 text-white font-bold py-2 px-4 rounded transition-all duration-300 hover:bg-blue-800 hover:scale-105;
+    }
+}

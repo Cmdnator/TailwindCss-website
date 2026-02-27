@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Page</title>
+</head>
+<body>
+    <video id="vid" src="video.mp4" loop muted autoplay></video>
+    <div id="f">
+    <h2><b>Background video</b></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, consequatur. Optio numquam perferendis voluptas, magnam commodi, architecto ullam fugit quam assumenda facilis, voluptatum cupiditate. Nulla ab perspiciatis facilis atque magni.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae provident accusamus repudiandae in cumque rem omnis quibusdam odio. Quod natus numquam at eius quaerat, ad nam corrupti eaque eos consequuntur.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea excepturi rem, aliquam minima iure commodi blanditiis asperiores officiis odit expedita itaque magnam velit ab id consectetur magni iste? Est, nam!</p>
+    <button id="btn">Pause</button>
+    <script>let video = document.getElementById("vid");
+            let btn = document.getElementById("btn");
+            btn.addEventListener('click', () => {
+                if(video.paused){
+                video.play();
+                btn.textContent = "Pause";
+            } else {
+                video.pause();
+                btn.textContent = "Play";
+            }
+            });
+    </script>
+</body>
+</html>
